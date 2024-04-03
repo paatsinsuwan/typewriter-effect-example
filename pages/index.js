@@ -1,18 +1,4 @@
 /* eslint-disable jsx-a11y/anchor-has-content */
-// import { Desktop, Pattern, Touch } from "@carbon/pictograms-react";
-import {
-  // TableOfContents,
-  LeadSpace,
-  // Layout,
-  // ContentBlockMedia,
-  // LinkList,
-  // ContentBlockMixed,
-  // ContentBlockSegmented,
-  // ContentBlockSimple,
-  // CardSectionImages,
-  // CardSectionSimple,
-} from "@carbon/ibmdotcom-react";
-// import { ArrowRight20 } from "@carbon/icons-react";
 import React from "react";
 import TypingLeadspace from "../components/typing-leadspace";
 
@@ -33,3 +19,20 @@ const Home = () => (
 );
 
 export default Home;
+
+
+
+// import { Desktop, Pattern, Touch } from "@carbon/pictograms-react";
+// import {
+  // TableOfContents,
+  // LeadSpace,
+  // Layout,
+  // ContentBlockMedia,
+  // LinkList,
+  // ContentBlockMixed,
+  // ContentBlockSegmented,
+  // ContentBlockSimple,
+  // CardSectionImages,
+  // CardSectionSimple,
+// } from "@carbon/ibmdotcom-react";
+// import { ArrowRight20 } from "@carbon/icons-react";

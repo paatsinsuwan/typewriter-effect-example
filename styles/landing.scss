@@ -9,6 +9,8 @@
 @import "~@carbon/ibmdotcom-styles/scss/components/layout/layout";
 @import "~@carbon/ibmdotcom-styles/scss/components/leadspace/leadspace";
 
+@import "typing-leadspace";
+
 .bx--content-section:not(:last-child) {
   padding-bottom: 48px;
 }

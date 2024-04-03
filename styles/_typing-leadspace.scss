@@ -1,0 +1,76 @@
+.bx--typewriter-effect {
+    &.show {
+        display: block;
+    }
+    h1 {
+        &.bx--leadspace-title {
+            @include carbon--type-style('display-03', true);
+            padding-top: $spacing-07;
+            padding-bottom: $spacing-12;
+        }
+        span {
+            &.bx--text-blue {
+                color: $blue-60;
+                animation: 1000ms infinite cubic-bezier(0.2, 0.2, 0.38, 0.9) blinking;
+            }
+            &.bx--text-black {
+                color: $text-01;
+            }
+            &.bx--text-white {
+                color: $ui-background;
+            }
+        }
+    }
+    p {
+        &.bx--leadspace-copy {
+            @include carbon--type-style('expressive-heading-03', true);
+            max-width: 640px;
+            padding-bottom: $spacing-07;
+        }
+    }
+    ol {
+        &.bx--buttongroup {
+            padding-top: 0;
+            padding-bottom: $spacing-07;
+            .bx--btn {
+                .bx--btn__icon {
+                    transition: all 150ms cubic-bezier(0.2, 0.2, 0.38, 0.9);
+                    // right: 1.25rem;
+                    width: 16px;
+                    height: 16px;
+                    transform: translateX(-8px);
+                }   
+                &:hover {
+                    .bx--btn__icon {
+                        // right: 1rem;
+                        transform: translateX(0px);
+                    }
+                }
+            }
+        }
+    }
+}
+
+.bx--typewriter-effect-large {
+        h1 {
+            &.bx--leadspace-title {
+                @include carbon--type-style('display-04', true);
+        }    
+        }
+    }
+// #typing-leadspace {
+//     &.variation-b, &.variation-d {
+//         display: none;
+//     }
+// }
+@keyframes blinking {
+    from {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}

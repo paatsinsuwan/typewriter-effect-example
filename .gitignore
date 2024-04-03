@@ -9,6 +9,7 @@ settings.json
 # Cache folders
 .cache
 .next
+.yarn
 
 # Logs
 logs

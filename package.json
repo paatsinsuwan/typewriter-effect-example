@@ -2,7 +2,7 @@
   "name": "carbon-for-ibm-dotcom-nextjs-template",
   "private": true,
   "version": "0.0.0",
-  "repository": "git@github.com:carbon-design-system/carbon-for-ibm-dotcom-nextjs-template.git",
+  "repository": "git@github.com:paatsinsuwan/typewriter-effect-example.git",
   "license": "Apache-2.0",
   "engines": {
     "node": ">=18"

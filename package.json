@@ -1,0 +1,58 @@
+{
+  "name": "carbon-for-ibm-dotcom-nextjs-template",
+  "private": true,
+  "version": "0.0.0",
+  "repository": "git@github.com:carbon-design-system/carbon-for-ibm-dotcom-nextjs-template.git",
+  "license": "Apache-2.0",
+  "engines": {
+    "node": ">=18"
+  },
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ]
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "cross-env SASS_PATH=node_modules:src next build",
+    "export": "next export",
+    "start": "node server.js",
+    "build-export": "cross-env SASS_PATH=node_modules:src next build && next export",
+    "lint": "eslint pages",
+    "lint:styles": "stylelint '**/*.{css,scss}' --config stylelint-config-carbon",
+    "prepare": "husky install",
+    "update-canary": "yarn upgrade @carbon/ibmdotcom-react@canary && yarn upgrade @carbon/ibmdotcom-styles@canary",
+    "update-next": "yarn upgrade @carbon/ibmdotcom-react@next && yarn upgrade @carbon/ibmdotcom-styles@next",
+    "update-latest": "yarn upgrade @carbon/ibmdotcom-react@latest && yarn upgrade @carbon/ibmdotcom-styles@latest"
+  },
+  "dependencies": {
+    "@carbon/ibmdotcom-react": "^1.44.0",
+    "@carbon/ibmdotcom-styles": "^1.44.0",
+    "@carbon/icons-react": "^10.9.1",
+    "@carbon/pictograms-react": "^11.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.18.2",
+    "@commitlint/cli": "^17.6.3",
+    "@commitlint/config-conventional": "^17.6.3",
+    "babel-preset-carbon": "^0.0.14",
+    "cross-env": "7.0.3",
+    "dotenv": "10.0.0",
+    "eslint": "^8.0.0",
+    "eslint-config-carbon": "^3.3.0",
+    "express": "^4.17.1",
+    "husky": "^7.0.0",
+    "lint-staged": "^13.0.3",
+    "next": "^12.3.4",
+    "next-compose-plugins": "^2.2.1",
+    "prettier": "^2.0.4",
+    "prop-types": "^15.7.2",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "rtlcss": "^2.6.2",
+    "sass": "^1.62.1",
+    "stylelint": "^14.3.0",
+    "stylelint-config-carbon": "^1.12.0"
+  },
+  "packageManager": "yarn@3.5.1"
+}

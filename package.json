@@ -17,7 +17,7 @@
     "build": "cross-env SASS_PATH=node_modules:src next build",
     "export": "next export",
     "start": "node server.js",
-    "build-export": "cross-env SASS_PATH=node_modules:src next build && next export",
+    "build-export": "cross-env SASS_PATH=node_modules:src next build && cross-env SASS_PATH=node_modules:src next export",
     "lint": "eslint pages",
     "lint:styles": "stylelint '**/*.{css,scss}' --config stylelint-config-carbon",
     "prepare": "husky install",

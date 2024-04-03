@@ -14,7 +14,4 @@ module.exports = {
     ALTLANG_ROOT_PATH: process.env.ALTLANG_ROOT_PATH || "/",
     ENABLE_RTL: process.env.ENABLE_RTL || "false",
   },
-  extends: [
-    'plugin:@next/next/recommended'
-  ],
 };
